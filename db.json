@@ -1,0 +1,54 @@
+{
+  "superheroes": [
+    {
+      "id": "1",
+      "name": "Batman",
+      "alterEgo": "Bruce Wayne"
+    },
+    {
+      "id": "2",
+      "name": "Superman",
+      "alterEgo": "Clark Kent"
+    },
+    {
+      "id": "3",
+      "name": "Wonder Woman",
+      "alterEgo": "Princess Diana"
+    },
+    {
+      "id": "4",
+      "name": "Spiderman",
+      "alterEgo": "Peter Parker"
+    },
+    {
+      "id": "5",
+      "name": "Iron Man",
+      "alterEgo": "Tony Stark"
+    },
+    {
+      "id": "6",
+      "name": "Captain America",
+      "alterEgo": "Steve Rogers"
+    },
+    {
+      "id": "7",
+      "name": "Thor",
+      "alterEgo": "Thor Odinson"
+    },
+    {
+      "id": "8",
+      "name": "Hulk",
+      "alterEgo": "Bruce Banner"
+    },
+    {
+      "id": "9",
+      "name": "Black Widow",
+      "alterEgo": "Natasha Romanoff"
+    },
+    {
+      "id": "10",
+      "name": "Doctor Strange",
+      "alterEgo": "Stephen Strange"
+    }
+  ]
+}
