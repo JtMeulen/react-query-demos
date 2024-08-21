@@ -12,6 +12,8 @@ import { RQCustomHookSuperHeroesPage } from "./pages/RQCustomHookSuperHeroesPage
 import { RQParallelQueriesPage } from "./pages/RQParallelQueriesPage";
 import { RQDynamicParallelQueriesPage } from "./pages/RQDynamicParallelQueriesPage";
 import { RQDependantQueriesPage } from "./pages/RQDependantQueriesPage";
+import { RQPaginatedQueriesPage } from "./pages/RQPaginatedQueriesPage";
+import { RQInfiniteQueriesPage } from "./pages/RQInfiniteQueriesPage";
 
 import "./App.css";
 
@@ -57,6 +59,12 @@ function App() {
               <li>
                 <Link to="/rq-dependant-queries">RQ Dependant Queries</Link>
               </li>
+              <li>
+                <Link to="/rq-paginated-queries">RQ Paginated Queries</Link>
+              </li>
+              <li>
+                <Link to="/rq-infinite-queries">RQ Infinite Queries</Link>
+              </li>
             </ul>
           </nav>
           <Routes>
@@ -86,6 +94,14 @@ function App() {
             <Route
               path="/rq-dependant-queries"
               element={<RQDependantQueriesPage userId={"1"} />}
+            />
+            <Route
+              path="/rq-paginated-queries"
+              element={<RQPaginatedQueriesPage />}
+            />
+            <Route
+              path="/rq-infinite-queries"
+              element={<RQInfiniteQueriesPage />}
             />
             <Route path="/" element={<HomePage />} />
           </Routes>
