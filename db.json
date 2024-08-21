@@ -1,4 +1,24 @@
 {
+  "users": [
+    {
+      "id": "1",
+      "name": "John Doe",
+      "email": "johndoe@test.com",
+      "channelId": "2"
+    }
+  ],
+  "channel": [
+    {
+      "id": "1",
+      "content": ["React", "Angular", "Vue"],
+      "name": "This is a channel for frameworks"
+    },
+    {
+      "id": "2",
+      "content": ["useQuery", "useFormData", "useReducer"],
+      "name": "This channel is for hooks"
+    }
+  ],
   "superheroes": [
     {
       "id": "1",
@@ -49,6 +69,32 @@
       "id": "10",
       "name": "Doctor Strange",
       "alterEgo": "Stephen Strange"
+    }
+  ],
+  "friends": [
+    {
+      "id": "1",
+      "name": "Chandler Bing"
+    },
+    {
+      "id": "2",
+      "name": "Joey Tribbiani"
+    },
+    {
+      "id": "3",
+      "name": "Ross Geller"
+    },
+    {
+      "id": "4",
+      "name": "Monica Geller"
+    },
+    {
+      "id": "5",
+      "name": "Rachel Green"
+    },
+    {
+      "id": "6",
+      "name": "Phoebe Buffay"
     }
   ]
 }

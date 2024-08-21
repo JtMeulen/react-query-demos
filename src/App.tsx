@@ -9,6 +9,9 @@ import { RQSingleHeroPage } from "./pages/RQSingleHeroPage";
 import { RQManualSuperHeroesPage } from "./pages/RQManualSuperHeroes";
 import { RQTransformedSuperHeroesPage } from "./pages/RQTransformedSuperHeroesPage";
 import { RQCustomHookSuperHeroesPage } from "./pages/RQCustomHookSuperHeroesPage";
+import { RQParallelQueriesPage } from "./pages/RQParallelQueriesPage";
+import { RQDynamicParallelQueriesPage } from "./pages/RQDynamicParallelQueriesPage";
+import { RQDependantQueriesPage } from "./pages/RQDependantQueriesPage";
 
 import "./App.css";
 
@@ -43,6 +46,17 @@ function App() {
                   RQ Custom Hook Super Heroes
                 </Link>
               </li>
+              <li>
+                <Link to="/rq-parallel-queries">RQ Parallel Queries</Link>
+              </li>
+              <li>
+                <Link to="/rq-dynamic-parallel-queries">
+                  RQ Dynamic Parallel Queries
+                </Link>
+              </li>
+              <li>
+                <Link to="/rq-dependant-queries">RQ Dependant Queries</Link>
+              </li>
             </ul>
           </nav>
           <Routes>
@@ -60,6 +74,18 @@ function App() {
             <Route
               path="/rq-custom-hook-super-heroes"
               element={<RQCustomHookSuperHeroesPage />}
+            />
+            <Route
+              path="/rq-parallel-queries"
+              element={<RQParallelQueriesPage />}
+            />
+            <Route
+              path="/rq-dynamic-parallel-queries"
+              element={<RQDynamicParallelQueriesPage heroIds={[1, 3]} />}
+            />
+            <Route
+              path="/rq-dependant-queries"
+              element={<RQDependantQueriesPage userId={"1"} />}
             />
             <Route path="/" element={<HomePage />} />
           </Routes>
