@@ -14,6 +14,7 @@ import { RQDynamicParallelQueriesPage } from "./pages/RQDynamicParallelQueriesPa
 import { RQDependantQueriesPage } from "./pages/RQDependantQueriesPage";
 import { RQPaginatedQueriesPage } from "./pages/RQPaginatedQueriesPage";
 import { RQInfiniteQueriesPage } from "./pages/RQInfiniteQueriesPage";
+import { RQMutationQueryPage } from "./pages/RQMutationQueryPage";
 
 import "./App.css";
 
@@ -65,6 +66,9 @@ function App() {
               <li>
                 <Link to="/rq-infinite-queries">RQ Infinite Queries</Link>
               </li>
+              <li>
+                <Link to="/rq-mutation-queries">RQ Mutation Queries</Link>
+              </li>
             </ul>
           </nav>
           <Routes>
@@ -102,6 +106,10 @@ function App() {
             <Route
               path="/rq-infinite-queries"
               element={<RQInfiniteQueriesPage />}
+            />
+            <Route
+              path="/rq-mutation-queries"
+              element={<RQMutationQueryPage />}
             />
             <Route path="/" element={<HomePage />} />
           </Routes>
