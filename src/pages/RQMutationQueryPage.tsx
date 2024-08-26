@@ -1,4 +1,4 @@
-import { useQuery, useMutation } from "@tanstack/react-query";
+import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import { createRef, FormEvent } from "react";
 
 type IHero = {
@@ -19,6 +19,7 @@ const fetchSuperHeroes = async () => {
 
 export const RQMutationQueryPage = () => {
   const formRef = createRef<HTMLFormElement>();
+  const queryClient = useQueryClient();
 
   const { isLoading, isFetching, data, isError, error, refetch } = useQuery({
     queryKey: ["super-heroes"],
@@ -47,8 +48,17 @@ export const RQMutationQueryPage = () => {
 
       return res.json();
     },
-    onSuccess: () => {
-      refetch();
+    onSuccess: (data) => {
+      // Data is returned from the POST request and contains the new hero
+      // We can update the cache with the new data
+      queryClient.setQueryData(
+        ["super-heroes"],
+        (oldData: IHero[] | undefined) => {
+          return oldData ? [...oldData, data] : [data];
+        }
+      );
+      // We can also invalidate the cache to refetch the data, so right afther a post a new get is made:
+      // queryClient.invalidateQueries({ queryKey: ["super-heroes"] });
     },
   });
 

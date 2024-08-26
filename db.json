@@ -10,12 +10,20 @@
   "channel": [
     {
       "id": "1",
-      "content": ["React", "Angular", "Vue"],
+      "content": [
+        "React",
+        "Angular",
+        "Vue"
+      ],
       "name": "This is a channel for frameworks"
     },
     {
       "id": "2",
-      "content": ["useQuery", "useFormData", "useReducer"],
+      "content": [
+        "useQuery",
+        "useFormData",
+        "useReducer"
+      ],
       "name": "This channel is for hooks"
     }
   ],
@@ -69,6 +77,31 @@
       "id": "10",
       "name": "Doctor Strange",
       "alterEgo": "Stephen Strange"
+    },
+    {
+      "id": 742569,
+      "name": "test",
+      "alterEgo": "123"
+    },
+    {
+      "id": 756601,
+      "name": "123",
+      "alterEgo": "123"
+    },
+    {
+      "id": 372923,
+      "name": "abc",
+      "alterEgo": "AAS"
+    },
+    {
+      "id": 867877,
+      "name": "1",
+      "alterEgo": "2"
+    },
+    {
+      "id": 510983,
+      "name": "rrr",
+      "alterEgo": "rrr"
     }
   ],
   "friends": [
